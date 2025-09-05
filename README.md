@@ -310,12 +310,11 @@ pip install -e ".[dev]"  # Includes development dependencies
 
 If you use this library in your research, please cite:
 ```bibtex
-@article{jahanshahi2025upn,
-  title={Uncertainty Propagation Networks},
-  authors={Jahanshahi, Hadi and Zhu, Zheng H.},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2025},
-  url={https://github.com/HJahanshahi/upn}
+@article{jahanshahi2025uncertainty,
+  title={Uncertainty Propagation Networks for Neural Ordinary Differential Equations},
+  author={Jahanshahi, Hadi and Zhu, Zheng H},
+  journal={arXiv preprint arXiv:2508.16815},
+  year={2025}
 }
 ```
 
