@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.pt
+*.pth
+trained_models/
+results/
+.vscode/
+.idea/
+*.ipynb_checkpoints/

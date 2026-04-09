@@ -1,0 +1,7 @@
+torch>=1.9
+torchdiffeq
+numpy
+scipy
+matplotlib
+tqdm
+pandas
