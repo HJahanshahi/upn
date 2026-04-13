@@ -65,9 +65,14 @@ upn/
 data/
 └── cubesat/             # CubeSat experimental trajectory data
 examples/
-└── cubesat/
-    ├── train_cubesat.py      # Train all models (Section 5.3)
-    └── evaluate_cubesat.py   # Evaluate & generate figures (Table 5, Figs. 27-31)
+├── cubesat/
+│   ├── train_cubesat.py      # Train all models (Section 5.3)
+│   └── evaluate_cubesat.py   # Evaluate & generate figures (Table 5, Figs. 27-31)
+├── dynamical_systems/
+│   ├── train_dynamical.py    # 4 non-chaotic systems (Section 5.1, Table 3)
+│   └── plot_results.py       # Visualization for non-chaotic results
+└── lorenz/
+    └── train_lorenz.py       # Chaotic Lorenz attractor (Section 5.2, Table 4)
 ```
 
 ---
@@ -123,6 +128,26 @@ python examples/cubesat/train_cubesat.py
 ```bash
 python examples/cubesat/evaluate_cubesat.py
 ```
+
+### Non-Chaotic Dynamical Systems (Section 5.1)
+
+Four canonical systems: Damped Harmonic Oscillator, Van der Pol, Linear 2D, Damped Pendulum.
+
+```bash
+python examples/dynamical_systems/train_dynamical.py
+```
+
+**Expected results (Table 3):** UPN achieves ~96.7% average coverage vs Ensemble ~26%.
+
+### Chaotic Lorenz Attractor (Section 5.2)
+
+30-model ensemble comparison with Lyapunov analysis.
+
+```bash
+python examples/lorenz/train_lorenz.py
+```
+
+**Expected results (Table 4):** UPN achieves ~94.5% coverage vs Ensemble ~66.8%.
 
 **Expected results (Table 5):**
 
