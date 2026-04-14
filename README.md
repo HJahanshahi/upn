@@ -73,6 +73,9 @@ examples/
 │   └── plot_results.py       # Visualization for non-chaotic results
 └── lorenz/
     └── train_lorenz.py       # Chaotic Lorenz attractor (Section 5.2, Table 4)
+└── etth1/
+    ├── download_etth1.py     # Download ETTh1 dataset
+    └── train_etth1.py        # Time-series forecasting (Section 5.4, Tables 6-7)
 ```
 
 ---
@@ -148,6 +151,17 @@ python examples/lorenz/train_lorenz.py
 ```
 
 **Expected results (Table 4):** UPN achieves ~94.5% coverage vs Ensemble ~66.8%.
+
+### ETTh1 Time-Series Forecasting (Section 5.4)
+
+UPN vs Neural SDE with sample-size trade-off analysis.
+
+```bash
+python examples/etth1/download_etth1.py   # download data (once)
+python examples/etth1/train_etth1.py
+```
+
+**Expected results (Table 6):** UPN MSE ~0.589, 14% better than Neural SDE, 6.6× faster inference.
 
 **Expected results (Table 5):**
 
